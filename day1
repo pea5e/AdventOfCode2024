@@ -1,0 +1,15 @@
+l1 = list()
+l2 = list()
+for i in input.split('\n'):
+    x= i.split()
+    l1.append(int(x[0]))
+    l2.append(int(x[1]))
+
+l1.sort()
+l2.sort()
+print(l1,l2)
+sum = int()
+for i,n in enumerate(l1):
+    sum += abs(n-l2[i])
+
+print(sum)
